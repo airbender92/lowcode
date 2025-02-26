@@ -4,8 +4,8 @@ import type { ComponentInstance } from 'vue'
 import { nanoid} from 'nanoid'
 import { cloneDeep } from 'lodash-es'
 import type { PropConfig, ComponentMeta } from '@/types/component'
-import axios from 'axios'
 import { saveAs } from 'file-saver'
+import axios from 'axios';
 
 const getDefaultProps = (propsConfig: Record<string, PropConfig>) => {
     return Object.entries(propsConfig).reduce((acc, [key, config]) => {

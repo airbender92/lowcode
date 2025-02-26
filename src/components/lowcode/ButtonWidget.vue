@@ -25,6 +25,7 @@ defineEmits(['click']);
     cursor: pointer;
 }
 
+
 .btn-primary{
     background-color: #409eff;
     color: #fff;
@@ -35,3 +36,5 @@ defineEmits(['click']);
     color: #409eff;
     border: 1px solid #409eff;
 }
+
+</style>

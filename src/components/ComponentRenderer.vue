@@ -13,7 +13,8 @@ import { defineAsyncComponent } from 'vue'
 
 const store = useLowcodeStore();
 const componentMap = {
-    TextWidget: defineAsyncComponent(() => import ('@/components/lowcode/TextWidget.vue'))
+    TextWidget: defineAsyncComponent(() => import ('@/components/lowcode/TextWidget.vue')),
+    ButtonWidget: defineAsyncComponent(() => import ('@/components/lowcode/ButtonWidget.vue')),
 }
 
 const getComponentType = (type: string) => componentMap[type]
