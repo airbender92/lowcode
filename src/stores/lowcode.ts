@@ -49,10 +49,14 @@ export const useLowcodeStore = defineStore('lowcode', {
             this.currentStep++
         },
 
-        async saveToServer(){
-            await axios.post('/api/save-template', {
-                components: this.componentList
-            })
+        async saveToServer() {
+            // Fake server response
+            return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log('Saved to server:', this.componentList);
+                resolve({ status: 200, message: 'Saved successfully' });
+            }, 1000);
+            });
         }
     }
 })

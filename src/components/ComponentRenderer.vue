@@ -8,7 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import { useLowcodeStore } from '@/store/lowcode'
+import { useLowcodeStore } from '@/stores/lowcode'
+import { defineAsyncComponent } from 'vue'
 
 const store = useLowcodeStore();
 const componentMap = {

@@ -1,6 +1,6 @@
 <template>
-    <div :style="{ color: props.color, fontSize: props.size + 'px'}">
-        {{ props.text }}
+    <div :style="{ color: color, fontSize: size + 'px'}">
+        {{ text }}
     </div>
 </template>
 

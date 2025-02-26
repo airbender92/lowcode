@@ -15,8 +15,9 @@
 </template>
 
 <script setup lang="ts">
+    import { computed } from 'vue'
     import { storeToRefs} from 'pinia';
-    import { useLowcodeStore} from '@/store/lowcode';
+    import { useLowcodeStore} from '@/stores/lowcode';
     import {components} from '@/components/lowcode/component-meta';
 
     const store = useLowcodeStore();

@@ -16,3 +16,5 @@ interface PropConfig{
     default?: any
     options?: {label: string; value: any}[] // 下拉选项
 }
+
+  
