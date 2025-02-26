@@ -20,7 +20,7 @@
 
 // 处理拖拽放下事件
 function handleDrop(event) {
-
+  event.preventDefault();
 }
 
 </script>

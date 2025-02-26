@@ -1,8 +1,14 @@
-interface ComponentMeta {
-    type: string // 组件唯一标识
+import type { Component } from 'vue'
+
+interface ComponentInstance {
+    id: string
+    type: string
+    props: Record<string, any>
+}
+
+interface ComponentMeta extends Omit<ComponentInstance, 'id'> {
     label: string // 显示名称
-    props: Record<string, PropConfig> // 属性配置
-    events: string[] // 支持的事件
+    events?: string[] // 支持的事件
 }
 
 interface PropConfig{
