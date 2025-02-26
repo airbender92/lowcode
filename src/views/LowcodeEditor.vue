@@ -15,3 +15,25 @@
            <PropertyPanel />
     </div>
 </template>
+
+<script setup>
+
+// 处理拖拽放下事件
+function handleDrop(event) {
+
+}
+
+</script>
+
+<style scoped>
+.editor{
+  display: flex;
+}
+
+.canvas-area{
+  flex: 1;
+  border: 1px solid #ccc;
+  min-height: 500px;
+}
+
+</style>
