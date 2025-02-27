@@ -1,9 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Graph />
   </div>
 </template>
 
+<script setup>
+import Graph from '../components/graph/index.vue'
+
+</script>
 <style>
 @media (min-width: 1024px) {
   .about {
